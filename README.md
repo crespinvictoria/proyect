@@ -1,0 +1,1 @@
+El proposito del proyecto es ser una tienda que ofrezca diferentes productos relacionados con el mudndo acuatico, desde todo tipo de peces hasta diferentes servicios orientados al mantenimiento de acuarios.
