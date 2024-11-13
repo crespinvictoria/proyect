@@ -236,6 +236,7 @@
     margin-top: 10px;
     color: #000618;
     transition: background-color .5s ease;
+    cursor: pointer;
 }
 
 .comprar_button:hover {
