@@ -9,7 +9,10 @@
     font-family: "Lato", sans-serif;
     font-weight: 500;
     font-style: normal;
-    /* background-color: #cecbf5; */
+}
+
+body {
+    background-color: #cecbf5;
 }
 
 /* HEADER */
@@ -193,7 +196,7 @@
 /* FOOTER */
 
 .footer {
-    background: linear-gradient(180deg, #afc7ff, #4e65ff);
+    background: linear-gradient(180deg, #b0abff, #4e65ff);
     margin-top: 15px;
 }
 

@@ -9,7 +9,10 @@
     font-family: "Lato", sans-serif;
     font-weight: 500;
     font-style: normal;
-    /* background-color: #cecbf5; */
+}
+
+body {
+    background-color: #cecbf5;
 }
 
 /* HEADER */
@@ -228,6 +231,7 @@
     margin-top: 10px;
     color: #000618;
     transition: background-color .5s ease;
+    cursor: pointer;
 }
 
 .main_submit:hover {
@@ -267,7 +271,7 @@
 /* FOOTER */
 
 .footer {
-    background: linear-gradient(180deg, #afc7ff, #4e65ff);
+    background: linear-gradient(180deg, #b0abff, #4e65ff);
     margin-top: 15px;
 }
 
