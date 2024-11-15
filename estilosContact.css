@@ -49,10 +49,10 @@ body {
 
 .headerA {     
     text-decoration: none;
-    font-size: 17px;  
+    font-size: 14px;  
     font-weight: 500;    
     color:#001861;
-    padding: 0 15px;
+    padding: 0 10px;
 }
 
 /* NAV */
@@ -176,8 +176,8 @@ body {
 }
 
 .main_h2 {
-    padding-top: 5px;
-    font-size: 28px;
+    padding-top: 10px;
+    font-size: 30px;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     color: #020c2c;
@@ -244,7 +244,6 @@ body {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     color: #020c2c;
-    margin-top: -10px;
 }
 
 .iframe{ 
