@@ -176,15 +176,15 @@ body {
 }
 
 .main_h2 {
-    padding-top: 3px;
-    font-size: 33px;
+    padding-top: 5px;
+    font-size: 28px;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     color: #020c2c;
 }
 
 .main_li, .li_p {
-    font-size: 20px;
+    font-size: 16px;
     margin: 4px 0;
 }
 
