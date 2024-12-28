@@ -54,6 +54,7 @@ form.addEventListener('submit', function(event) {
 
 // alerta para validar contraseñas
 
+
     if (contraseñaUsuario !== contraseñaUsuario2) {
         Swal.fire({
             icon: "error",
@@ -67,8 +68,14 @@ form.addEventListener('submit', function(event) {
 
     // alerta para completar datos 
 
-    if (nombreUsuario === "") {
-        console.log("sdklfhsdjk");
+    if (contraseñaUsuario2 =="" || contraseñaUsuario == "" || telefonoUsuario == "" || emailUsuario == "" || username == "" || apellidoUsuario == "" || nombreUsuario == ""){
+        Swal.fire({
+            title: "Hay campos incompletos!!!!!!!!!!!!!!!!!!!!",
+            text: "Complete los campos!!!!!!!",
+            imageUrl: "https://i.pinimg.com/736x/df/fc/11/dffc1172425c7924f05235fda334e90a.jpg",
+            imageWidth: 300,
+            imageHeight: 300,
+          });
         return;
     }
 
@@ -87,6 +94,8 @@ form.addEventListener('submit', function(event) {
         title: "¡Te has registrado correctamente!",
         text: `Bienvenido ${nombreUsuario}`,
         imageUrl: "https://i.pinimg.com/736x/23/e9/ec/23e9ec7851f318521ff3c3ea9f1d617c.jpg",
+        imageWidth: 300,
+        imageHeight: 300,
       });
 })
 
