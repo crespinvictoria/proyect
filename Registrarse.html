@@ -6,18 +6,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="icon" href="Imagenes/acuarioIcono.ico">
     <link rel='stylesheet' href='estilosReg.css'>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
-<body>
+<body id="body">
+
     <header id="header">
+
         <ul id="headerUl">
-            <li class="headerLi"><a class="headerA" href="IniciarSesion.html">Iniciar sesión</a></li>
-            <li class="headerLi"><a class="headerA" href="Registrarse.html">Registrarse</a></li>
-            <li class="headerLi"><a class="headerA" href="Contacto.html">Contacto</a></li>
+            <li id="headerLi" class="headerLi"><a id="headerA" class="headerA" href="IniciarSesion.html">Iniciar sesión</a></li>
+            <li id="headerLi" class="headerLi"><a id="headerA" class="headerA" href="Registrarse.html">Registrarse</a></li>
+            <li id="headerLi" class="headerLi"><a id="headerA" class="headerA" href="Contacto.html">Contacto</a></li>
         </ul>   
     </header>
         <div id="logoDiv">
             <img id='headerLogo' src="Imagenes/registrarse.png" alt="Logo Header">
         </div>
+    
+
 
     <nav id="nav">
         <ul id="navUl">
@@ -30,19 +35,21 @@
             </div>
         </ul>
     </nav>
-    <!-- <hr class="lineaseparadora"> -->
 
+    <!-- <hr class="lineaseparadora"> -->
+    <!-- https://formspree.io/f/mkgnbekp -->
     <main class="main">
         <div class="main_container">
         <h1 class="main_h1">Crea tu cuenta</h1>
         <p class="main_p">¡Únete a nosotros! Regístrate para acceder a ofertas exclusivas y novedades en nuestra tienda.</p>
-        <form method="post" action="https://formspree.io/f/mkgnbekp" class="main_form">
-            <input class="main_input" type="text" placeholder="Nombre" name="nombre" required>
-            <input class="main_input" type="text" placeholder="Apellido" name="apellido" required>
-            <input class="main_input" type="email" placeholder="Email" name="email" required>
-            <input class="main_input" type="tel" placeholder="Teléfono" name="telefono" required>
+        <form id="for" method="post" action="" class="main_form">
+            <input id="nombre" class="main_input" type="text" placeholder="Nombre" name="nombre" required>
+            <input id="apellido" class="main_input" type="text" placeholder="Apellido" name="apellido" required>
+            <input id="nombreDeUsuario" class="main_input" type="text" placeholder="Nombre  de usuario" name="nombre de usuario" required>
+            <input id="email" class="main_input" type="email" placeholder="Email" name="email" required>
+            <input id="telefono" class="main_input" type="tel" placeholder="Teléfono" name="telefono" required>
             <div class="div_label">
-            <label class="main_label" for="nacimiento">Fecha de nacimiento</label>
+            <label id="fechaNacimiento" class="main_label" for="nacimiento">Fecha de nacimiento</label>
             </div>
             <input class="main_input" type="date" name="nacimiento" id="nacimiento" required>
             <div class="div_label">
@@ -51,18 +58,24 @@
             <select class="main_input" name="genero" id="genero" required>
                 <option class="main_option" value="Femenino">Femenino</option>
                 <option class="main_option" value="Masculino">Masculino</option>
-            </select>
-            <input class="main_input" type="password" placeholder="Contraseña" name="contraseña" required>
-            <input class="main_input" type="password" placeholder="Repite la Contraseña" name="contraseña" required>
-            <input class="main_submit" type="submit" value="Registrarse" name="enviar">
+            </select>  
+            <input id="password1" class="main_input" type="password" placeholder="Contraseña" name="contraseña" required>
+            <input id="password2" class="main_input" type="password" placeholder="Repite la Contraseña" name="contraseña" required>
+            <button type="button" id="boton">Comprobar contraseñas</button>
+            <input id="submit" class="main_submit" type="submit" value="Registrarse" name="enviar">
             <p class="main_cuenta">¿Ya tienes una cuenta?</p><a class="main_inicia" href="IniciarSesion.html">Inicia sesión</a>
         </form>
     </div>
+
+    <div class="darkModeDiv">
+        <button id="darkMode"><img id="imgDarkMode" src="Imagenes/dark-mode.png"></button>
+    </div>
+
     </main>
 
     <footer class="footer"> 
         <div class="footer_nuestrasredes__div">
-        <p class="footer_nuestrasredes_p">NUESTRAS REDES</p>
+        <p id="footerNS" class="footer_nuestrasredes_p">NUESTRAS REDES</p>
         </div>
         <ul class="footer_nuestrasredes_ul">
             <li class="footer_nuestrasredes__li"><a target="_blank" class="footer_nuestrasredes__a" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
@@ -72,27 +85,32 @@
         </ul>
     <hr class="lineaseparadora2">
         <div class="footer_informacion_div">
-        <p class="footer_informacion_p">INFORMACIÓN DE CONTACTO</p>
+        <p id="footerInfo" class="footer_informacion_p">INFORMACIÓN DE CONTACTO</p>
         </div>
     
-        <div class="footer_div">
+        <div id="footer_div" class="footer_div">
              <ul class="footer_informacion">
-                <li class="footer_li1">Dirección:</li>
-                <li class="footer_informacion_li2">Feval 1249, B1722 Merlo, Provincia de Buenos Aires</li>
+                <li id="footer_li1" class="footer_li1">Dirección:</li>
+                <li id="footer_li2" class="footer_informacion_li2">Feval 1249, B1722 Merlo, Provincia de Buenos Aires</li>
                 <li class="footer_informacion_li"><iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18031.48433081946!2d-58.79692403622089!3d-34.68124264514891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc951dfdf2e671%3A0x841a85bebf15f7c!2sDR%20PEZ!5e0!3m2!1ses!2sar!4v1728615156695!5m2!1ses!2sar" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
             </ul> 
             
              <ul class="footer_informacion2">
                 <div class="footer_tel">
-                <li class="footer_li1">Teléfono</li>
-                <li class="footer_informacion_li2">01111111111</li>
+                <li id="footer_li3" class="footer_li1">Teléfono</li>
+                <li id="footer_li4" class="footer_informacion_li2">01111111111</li>
                 </div>
-                <li class="footer_li1">Email</li>
-                <li class="footer_informacion_li2">coraldreamsacuario@gmail.com</li>
+                <li id="footer_li5" class="footer_li1">Email</li>
+                <li id="footer_li6" class="footer_informacion_li2">coraldreamsacuario@gmail.com</li>
              </ul>
            </div>
+
+ 
     </footer>
+    
+<script src="javascriptReg.js"></script>
 
 </body>
+
 
 </html>

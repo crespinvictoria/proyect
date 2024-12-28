@@ -9,6 +9,8 @@
     font-weight: 500;
     font-style: normal;
     overflow-x: hidden; 
+    transition: all 0.4s ease-in-out;
+
 }
 
 body {
@@ -111,6 +113,30 @@ body {
     outline:none;  
 }
 
+/* dark mode */
+
+#imgDarkMode {
+    width: 83px;    
+}
+
+#darkMode{
+    width: 83px;
+    height: 83px;
+    border: 0px solid #000320;
+    border-radius: 100px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    box-shadow: 3px 3px 5px #7a878fc4;
+    cursor: pointer;
+}
+
+
+.darkModeBody {
+    background-color: #030620f8;
+   
+}
+
 /* MAIN */
 
 .main {
@@ -186,9 +212,9 @@ body {
 
 /* FOOTER */
 
-.footer {
+/* .footer {
     background: linear-gradient(180deg, #c7c3ffd8, #4e65ff);
-}
+} */
 
 .footer_nuestrasredes__div{
     text-align: center;
@@ -274,6 +300,8 @@ body {
     font-size: 10px;
     padding: 10px 0;
 }
+
+
 
 @media (min-width: 768px) {
     * {
@@ -559,10 +587,10 @@ body {
     
     /* FOOTER */
     
-    .footer {
+    /* .footer {
         background: linear-gradient(180deg, #c7c3ffd8, #4e65ff);
          margin-top: 15px;
-    }
+    } */
     
     .footer_nuestrasredes__div{
         text-align: center;
@@ -650,4 +678,35 @@ body {
         font-size: 25px;
         padding: 10px 0;
     }
+
+    
+}
+
+
+/* dark mode */
+
+.darkModeBody {
+    background-color: #030620f8;
+   
+}
+
+.darkModeHeaderA {
+    color:#93aeff;
+}
+
+.darkModeHeaderUl  {
+    background: linear-gradient(80deg,#030620f8 50%, #0a2058f5);
+}
+
+
+.darkModeHeaderA:visited {
+    color:#93aeff;
+}
+
+.darkModeFooter {
+    background: linear-gradient(180deg, #030620f8, #071844f5);
+}
+
+.darkModeFooterText {
+    color:#93aeff;
 }

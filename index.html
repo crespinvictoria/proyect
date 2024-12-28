@@ -6,18 +6,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="icon" href="Imagenes/acuarioIcono.ico">
     <link rel='stylesheet' href='estilosAcuario.css'>
+    <script src="javascript.js"></script>
 </head>
-<body>
+<body id="body">
+
     <header id="header">
+
         <ul id="headerUl">
-            <li class="headerLi"><a class="headerA" href="IniciarSesion.html">Iniciar sesión</a></li>
-            <li class="headerLi"><a class="headerA" href="Registrarse.html">Registrarse</a></li>
-            <li class="headerLi"><a class="headerA" href="Contacto.html">Contacto</a></li>
+            <li id="headerLi" class="headerLi"><a id="headerA" class="headerA" href="IniciarSesion.html">Iniciar sesión</a></li>
+            <li id="headerLi" class="headerLi"><a id="headerA" class="headerA" href="Registrarse.html">Registrarse</a></li>
+            <li id="headerLi" class="headerLi"><a id="headerA" class="headerA" href="Contacto.html">Contacto</a></li>
         </ul>   
     </header>
         <div id="logoDiv">
             <img id='headerLogo' src="Imagenes/CoralDreams.png" alt="Logo Header">
         </div>
+    
+
 
     <nav id="nav">
         <ul id="navUl">
@@ -34,7 +39,7 @@
 
     
     <main id="main">   
-        <h2 class="section_h2">PRODUCTOS DESTACADOS</h2>
+        <h2 id="productosDestacados" class="section_h2">PRODUCTOS DESTACADOS</h2>
 
         <section class="section_productosdestacados">
          
@@ -100,7 +105,7 @@
             </article>
         </section>     
         
-               <h2 class="section_h2">PROMOCIONES</h2>
+               <h2 id="promociones" class="section_h2">PROMOCIONES</h2>
 
         <section class='section_promociones'>
             <article class='article_section'>
@@ -140,11 +145,17 @@
             <button type="button" name="comprar" class="comprar_button">Comprar</button>
             </article> -->
         </section>
+
+        <div class="darkModeDiv">
+            <button id="darkMode"><img id="imgDarkMode" src="Imagenes/dark-mode.png"></button>
+        </div>
+
     </main>
 
+    
     <footer class="footer"> 
         <div class="footer_nuestrasredes__div">
-        <p class="footer_nuestrasredes_p">NUESTRAS REDES</p>
+        <p id="footerNS" class="footer_nuestrasredes_p">NUESTRAS REDES</p>
         </div>
         <ul class="footer_nuestrasredes_ul">
             <li class="footer_nuestrasredes__li"><a target="_blank" class="footer_nuestrasredes__a" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
@@ -154,26 +165,30 @@
         </ul>
     <hr class="lineaseparadora2">
         <div class="footer_informacion_div">
-        <p class="footer_informacion_p">INFORMACIÓN DE CONTACTO</p>
+        <p id="footerInfo" class="footer_informacion_p">INFORMACIÓN DE CONTACTO</p>
         </div>
     
-        <div class="footer_div">
+        <div id="footer_div" class="footer_div">
              <ul class="footer_informacion">
-                <li class="footer_li1">Dirección:</li>
-                <li class="footer_informacion_li2">Feval 1249, B1722 Merlo, Provincia de Buenos Aires</li>
+                <li id="footer_li1" class="footer_li1">Dirección:</li>
+                <li id="footer_li2" class="footer_informacion_li2">Feval 1249, B1722 Merlo, Provincia de Buenos Aires</li>
                 <li class="footer_informacion_li"><iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18031.48433081946!2d-58.79692403622089!3d-34.68124264514891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc951dfdf2e671%3A0x841a85bebf15f7c!2sDR%20PEZ!5e0!3m2!1ses!2sar!4v1728615156695!5m2!1ses!2sar" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
             </ul> 
             
              <ul class="footer_informacion2">
                 <div class="footer_tel">
-                <li class="footer_li1">Teléfono</li>
-                <li class="footer_informacion_li2">01111111111</li>
+                <li id="footer_li3" class="footer_li1">Teléfono</li>
+                <li id="footer_li4" class="footer_informacion_li2">01111111111</li>
                 </div>
-                <li class="footer_li1">Email</li>
-                <li class="footer_informacion_li2">coraldreamsacuario@gmail.com</li>
+                <li id="footer_li5" class="footer_li1">Email</li>
+                <li id="footer_li6" class="footer_informacion_li2">coraldreamsacuario@gmail.com</li>
              </ul>
            </div>
+
+ 
     </footer>
+
+<script src="javascriptIndex.js"></script>
 
 </body>
 
